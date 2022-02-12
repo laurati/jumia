@@ -6,6 +6,6 @@ import (
 
 func main() {
 
-	routes.CarregaRotas()
+	routes.LoadRoutes()
 
 }

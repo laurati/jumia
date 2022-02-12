@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func CarregaRotas() {
+func LoadRoutes() {
 
 	router := gin.Default()
 
