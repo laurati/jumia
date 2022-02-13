@@ -4,7 +4,9 @@ go 1.17
 
 require (
 	github.com/gin-gonic/gin v1.7.7
+	github.com/go-playground/assert/v2 v2.0.1
 	github.com/mattn/go-sqlite3 v1.14.11
+	github.com/restuwahyu13/go-supertest v0.0.3
 )
 
 require (
@@ -20,6 +22,6 @@ require (
 	github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
-	golang.org/x/sys v0.0.0-20200116001909-b77594299b42 // indirect
-	gopkg.in/yaml.v2 v2.2.8 // indirect
+	golang.org/x/sys v0.0.0-20210503173754-0981d6026fa6 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )

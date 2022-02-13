@@ -8,4 +8,6 @@ func main() {
 
 	routes.LoadRoutes()
 
+	routes.LoadRoutes().Run("localhost:8080")
+
 }

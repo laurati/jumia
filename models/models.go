@@ -68,35 +68,28 @@ func DataJumia() []Jumia_table {
 		switch s {
 		case "237":
 			client.Country = "Cameroon"
-			client.Country_code = fmt.Sprintf("+%s", s)
-			client.Phone_num = v.Telefone[6:]
 			state = RegexValidation("\\(237\\) ?[2368]\\d{7,8}$", v.Telefone)
-			client.State = whatIs(state)
+
 		case "251":
 			client.Country = "Ethiopia"
-			client.Country_code = fmt.Sprintf("+%s", s)
-			client.Phone_num = v.Telefone[6:]
 			state = RegexValidation("\\(251\\) ?[1-59]\\d{8}$", v.Telefone)
-			client.State = whatIs(state)
+
 		case "212":
 			client.Country = "Morocco"
-			client.Country_code = fmt.Sprintf("+%s", s)
-			client.Phone_num = v.Telefone[6:]
 			state = RegexValidation("\\(212\\) ?[5-9]\\d{8}$", v.Telefone)
-			client.State = whatIs(state)
+
 		case "258":
 			client.Country = "Mozambique"
-			client.Country_code = fmt.Sprintf("+%s", s)
-			client.Phone_num = v.Telefone[6:]
 			state = RegexValidation("\\(258\\) ?[28]\\d{7,8}$", v.Telefone)
-			client.State = whatIs(state)
+
 		case "256":
 			client.Country = "Uganda"
-			client.Country_code = fmt.Sprintf("+%s", s)
-			client.Phone_num = v.Telefone[6:]
 			state = RegexValidation("\\(256\\) ?\\d{9}$", v.Telefone)
-			client.State = whatIs(state)
 		}
+
+		client.Country_code = fmt.Sprintf("+%s", s)
+		client.State = whatIs(state)
+		client.Phone_num = v.Telefone[6:]
 
 		client = Jumia_table{client.Country, client.State, client.Country_code, client.Phone_num}
 		customers = append(customers, client)
