@@ -20,4 +20,4 @@ func TestPingRoute(t *testing.T) {
 	assert.Equal(t, "pong", w.Body.String())
 }
 
-// /countries -> Error: unable to open database file: no such file or directory (500)
+// "/countries" -> Error: unable to open database file: no such file or directory (500)

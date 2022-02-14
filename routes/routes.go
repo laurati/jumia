@@ -14,10 +14,10 @@ func LoadRoutes() *gin.Engine {
 	router.GET("/countries/:country", controllers.GetDataByCountry)
 	router.GET("/countries/:country/:state", controllers.GetDataByState)
 
+	//to test routes_test.go
 	router.GET("/ping", func(c *gin.Context) {
 		c.String(200, "pong")
 	})
 
-	// router.Run("localhost:8080")
 	return router
 }

@@ -6,6 +6,7 @@ import (
 )
 
 func DbConect() *sql.DB {
+
 	db, err := sql.Open("sqlite3", "./db/sample.db")
 	if err != nil {
 		log.Println("Error:", err.Error())

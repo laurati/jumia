@@ -6,8 +6,8 @@ import (
 
 func main() {
 
-	routes.LoadRoutes()
+	r := routes.LoadRoutes()
 
-	routes.LoadRoutes().Run("localhost:8080")
+	r.Run("localhost:8080")
 
 }
